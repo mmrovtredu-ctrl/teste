@@ -1,37 +1,42 @@
 /*
   variables.css
   -------------
-  Tokens de design do ML Control.
+  Tokens de design do ML Control — v2 "Vitrine".
 
-  Conceito: painel de comando náutico — fundo escuro tipo "noite no porto",
-  com um azul-petróleo de fundo, detalhes em âmbar (faroletes/sinalização)
-  para alertas e destaques, e verde-água para indicadores positivos.
-  Tipografia: Space Grotesk para títulos/números (caráter técnico),
-  Inter para texto corrido, IBM Plex Mono para dados tabulares/valores.
+  Conceito: painel claro inspirado em vitrines de loja e etiquetas
+  de produto/promoção. Fundo off-white quente, cards brancos bem
+  arredondados (como cartões de oferta), verde-lima como cor de
+  "destaque/em alta" (a cor de uma etiqueta de promoção), coral
+  para alertas e azul para informação.
+
+  Tipografia: Sora para títulos (geométrica, arredondada — ecoa os
+  cantos dos cards), Inter para texto corrido, JetBrains Mono para
+  números e dados tabulares.
 */
 
 :root {
   /* ===== Cores base ===== */
-  --color-bg: #0b1620;            /* fundo principal — azul muito escuro */
-  --color-bg-elevated: #11212f;   /* cards e painéis */
-  --color-bg-elevated-2: #16293a; /* hover / elementos secundários */
-  --color-border: #213548;        /* linhas e divisórias */
+  --color-bg: #faf7f2;             /* fundo principal — off-white quente */
+  --color-bg-elevated: #ffffff;    /* cards e painéis */
+  --color-bg-elevated-2: #f3efe7;  /* hover / elementos secundários */
+  --color-border: #ebe6dc;         /* linhas e divisórias */
 
-  --color-text: #e7eef5;          /* texto principal */
-  --color-text-muted: #8fa3b8;    /* texto secundário */
-  --color-text-faint: #5d7186;    /* texto terciário / placeholders */
+  --color-text: #1a1a2e;           /* texto principal — quase preto azulado */
+  --color-text-muted: #6b6b7d;     /* texto secundário */
+  --color-text-faint: #a3a0b3;     /* texto terciário / placeholders */
 
   /* ===== Acentos ===== */
-  --color-accent: #ffb454;        /* âmbar — sinalização, destaque principal */
-  --color-accent-strong: #ff9d2e;
-  --color-positive: #5fd9a4;       /* verde-água — alta, lucro, ok */
-  --color-negative: #ff7a7a;       /* vermelho-coral — queda, alerta crítico */
-  --color-info: #5fb3d9;           /* azul claro — informativo */
+  --color-accent: #c8ff4d;         /* verde-lima — destaque principal, "em alta" */
+  --color-accent-strong: #aee62e;
+  --color-accent-text: #2b3a00;    /* texto sobre fundo lima (contraste) */
+  --color-positive: #2fae6e;       /* verde — lucro, ok */
+  --color-negative: #ff6b5b;       /* coral — queda, alerta crítico */
+  --color-info: #5b7fff;           /* azul — informativo, links */
 
   /* ===== Tipografia ===== */
-  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-display: "Sora", "Inter", sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "IBM Plex Mono", "SF Mono", monospace;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
 
   /* ===== Espaçamento ===== */
   --space-xs: 4px;
@@ -42,13 +47,15 @@
   --space-2xl: 48px;
 
   /* ===== Layout ===== */
-  --sidebar-width: 220px;
-  --topbar-height: 64px;
+  --sidebar-width: 232px;
+  --topbar-height: 68px;
   --bottom-nav-height: 64px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
 
-  /* ===== Sombras ===== */
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
+  /* ===== Sombras (suaves, levemente coloridas) ===== */
+  --shadow-card: 0 8px 24px -8px rgba(26, 26, 46, 0.08);
+  --shadow-card-hover: 0 12px 28px -8px rgba(26, 26, 46, 0.12);
+  --shadow-accent: 0 8px 20px -6px rgba(200, 255, 77, 0.5);
 }

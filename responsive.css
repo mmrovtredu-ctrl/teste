@@ -1,9 +1,9 @@
 /*
   responsive.css
   ---------------
-  Ajustes para tablet e celular.
-  Estratégia: a sidebar fica oculta em telas pequenas e é
-  substituída pelo menu inferior (bottom-nav).
+  Ajustes para tablet e celular — v2 "Vitrine".
+  A sidebar (cartão flutuante) fica oculta em telas pequenas e é
+  substituída pelo menu inferior flutuante (bottom-nav).
 */
 
 /* ===================== TABLET (até 1024px) ===================== */
@@ -28,10 +28,13 @@
     display: flex;
   }
 
+  .app-shell {
+    padding: var(--space-md);
+  }
+
   /* Espaço para o conteúdo não ficar embaixo do menu fixo */
   .main {
-    padding: var(--space-md);
-    padding-bottom: calc(var(--bottom-nav-height) + var(--space-lg));
+    padding-bottom: calc(var(--bottom-nav-height) + var(--space-xl));
   }
 
   .kpi-grid,
@@ -40,8 +43,12 @@
     gap: var(--space-sm);
   }
 
+  .kpi-card {
+    padding: var(--space-md) var(--space-sm) var(--space-sm);
+  }
+
   .kpi-card__value {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   /* Topbar mais compacta */
@@ -68,7 +75,7 @@
   }
 
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
 

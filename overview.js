@@ -65,11 +65,12 @@ function renderSalesChart(salesByDay) {
         {
           label: "Vendas",
           data: salesByDay,
-          borderColor: "#ffb454",
-          backgroundColor: "rgba(255, 180, 84, 0.12)",
+          borderColor: "#aee62e",
+          backgroundColor: "rgba(200, 255, 77, 0.25)",
           fill: true,
           tension: 0.35,
           pointRadius: 0,
+          borderWidth: 2.5,
         },
       ],
     },
@@ -77,8 +78,8 @@ function renderSalesChart(salesByDay) {
       responsive: true,
       plugins: { legend: { display: false } },
       scales: {
-        x: { grid: { display: false }, ticks: { color: "#5d7186" } },
-        y: { grid: { color: "#213548" }, ticks: { color: "#5d7186" } },
+        x: { grid: { display: false }, ticks: { color: "#a3a0b3" } },
+        y: { grid: { color: "#ebe6dc" }, ticks: { color: "#a3a0b3" } },
       },
     },
   });
